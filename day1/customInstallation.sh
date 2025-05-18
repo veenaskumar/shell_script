@@ -14,7 +14,7 @@ if [ $operating_system == "MINGW64_NT-*" ];
 then 
   echo "Running on Windows via Git Bash"
   # here bug : filter 1st result only not go after 1st
-  id=$(winget search --name $package_name | grep -m 1 "$package_name" | awk '{print $2}')
+  id=$(winget search --name $package_name | grep -m 1 $package_name | awk '{print $2}')
   winget install --id "$id" -e
 elif [ $operating_system == "Linux" ];
 then
@@ -30,8 +30,14 @@ then
   then
     echo "Running in Debian Distro"
     sudo apt install $package_name
+  # for redhat distribution
+  elif $(echo $distribution | grep -iq "fedora")
+  then
+    echo "Running is Redhat Distro"
+    sudo dnf install $package_name   
   fi
 elif [ $operating_system == "Darwin" ];
 then
   echo "Running on Mac via Terminal"
+  brew install $package_name
 fi
