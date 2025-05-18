@@ -28,7 +28,7 @@ chmod +x install.sh
 3. **Run the script**:
 
 ```
-./script.sh
+./install.sh
 ```
 ## Example 
 
