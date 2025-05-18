@@ -30,3 +30,13 @@ chmod +x install.sh
 ```
 ./script.sh
 ```
+## Example 
+
+```
+$ ./install.sh
+Enter the package name: git
+Finding the OS...
+Running on Linux via terminal
+Running in Arch Distro
+Installing git...
+```
