@@ -20,4 +20,13 @@ This script provides an easy way to install packages across different operating 
 ```bash
 curl -O https://raw.githubusercontent.com/your-username/your-repo/main/install.sh
 ```
+2. **Make it executable**:
 
+```
+chmod +x install.sh
+```
+3. **Run the script**:
+
+```
+./script.sh
+```
