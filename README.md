@@ -1,6 +1,6 @@
 ### shell_script
 
-# Custom Installation Script
+# Package Installation Script
 ## day 1
 
 This script provides an easy way to install packages across different operating systems (Linux, macOS, Windows via Git Bash). It detects your OS and uses the appropriate package manager to install your desired software.
